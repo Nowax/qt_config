@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE language SYSTEM "language.dtd">
+<language name="TTCN3" version="1.07" kateversion="2.3" section="Sources" extensions="*.ttcn3" mimetype="text/x-java">
+	<highlighting>
+		<list name="keywords">
+			<item> action </item>
+			<item> activate </item>
+			<item> all </item>
+			<item> alt </item>
+			<item> altstep </item>
+			<item> and </item>
+			<item> and4b </item>
+			<item> any </item>
+			<item> anytype </item>
+			<item> call </item>
+			<item> catch </item>
+			<item> check </item>
+			<item> clear </item>
+			<item> complement </item>
+			<item> connect </item>
+			<item> const </item>
+			<item> control </item>
+			<item> create </item>
+			<item> deactivate </item>
+			<item> default </item>
+			<item> disconect </item>
+			<item> display </item>
+			<item> done </item>
+			<item> else </item>
+			<item> encode </item>
+			<item> error </item>
+			<item> except </item>
+			<item> exception </item>
+			<item> execute </item>
+			<item> extension </item>
+			<item> external </item>
+			<item> fail </item>
+			<item> false </item>
+			<item> for </item>
+			<item> from </item>
+			<item> function </item>
+			<item> getcall </item>
+			<item> getreply </item>
+			<item> getverdict </item>
+			<item> goto </item>
+			<item> group </item>
+			<item> if </item>
+			<item> ifpresent </item>
+			<item> import </item>
+			<item> inconc </item>
+			<item> infinity </item>
+			<item> interleave </item>
+			<item> label </item>
+			<item> language </item>
+			<item> length </item>
+			<item> log </item>
+			<item> map </item>
+			<item> match </item>
+			<item> mixed </item>
+			<item> mod </item>
+			<item> modifies </item>
+			<item> modulepar </item>
+			<item> mtc </item>
+			<item> noblock </item>
+			<item> none </item>
+			<item> not </item>
+			<item> not4b </item>
+			<item> nowait </item>
+			<item> null </item>
+			<item> objid </item>
+			<item> omit </item>
+			<item> optional </item>
+			<item> or4b </item>
+			<item> override </item>
+			<item> param </item>
+			<item> pass </item>
+			<item> pattern </item>
+			<item> port </item>
+			<item> procedure </item>
+			<item> raise </item>
+			<item> read </item>
+			<item> receive </item>
+			<item> recursive </item>
+			<item> rem </item>
+			<item> repeat </item>
+			<item> reply </item>
+			<item> return </item>
+			<item> running </item>
+			<item> runs </item>
+			<item> self </item>
+			<item> to </item>
+			<item> send </item>
+			<item> sender </item>
+			<item> set </item>
+			<item> setverdict </item>
+			<item> signature </item>
+			<item> start </item>
+			<item> stop </item>
+			<item> subset </item>
+			<item> superset </item>
+			<item> system </item>
+			<item> template </item>
+			<item> testcase </item>
+			<item> timeout </item>
+			<item> timer </item>
+			<item> trigger </item>
+			<item> true </item>
+			<item> type </item>
+			<item> union </item>
+			<item> universal </item>
+			<item> unmap </item>
+			<item> value </item>
+			<item> valueof </item>
+			<item> var </item>
+			<item> variant </item>
+			<item> verdicttype </item>
+			<item> while </item>
+			<item> with </item>
+			<item> xor </item>
+			<item> xor4b </item>
+		</list>
+		<list name="types">
+			<item> bool </item>
+			<item> u8 </item>
+			<item> u16 </item>
+			<item> u32 </item>
+			<item> r8 </item>
+			<item> r16 </item>
+			<item> r32 </item>
+			<item> r64 </item>
+			<item> char16_t </item>
+			<item> char32_t </item>
+			<item> explicit </item>
+			<item> export </item>
+			<item> inline </item>
+			<item> mutable </item>
+			<item> nullptr_t </item>
+			<item> wchar_t </item>
+			<item> bitstring </item>
+			<item> boolean </item>
+			<item> record </item>
+			<item> octetstring </item>
+			<item> module </item>
+			<item> message </item>
+			<item> in </item>
+			<item> inout </item>
+			<item> integer </item>
+			<item> out </item>
+			<item> hexstring </item>
+			<item> float </item>
+			<item> enumerated </item>
+			<item> component </item>
+			<item> charstring </item>
+			<item> char </item>
+			<item> address </item>
+		</list>
+		<contexts>
+			<context attribute="Normal Text" lineEndContext="#stay" name="Default">
+				<keyword attribute="Keyword" context="#stay" String="keywords"/>
+				<keyword attribute="Data Type" context="#stay" String="types"/>
+				<DetectChar attribute="Symbol" context="#stay" char="{" beginRegion="Brace1" />
+				<DetectChar attribute="Symbol" context="#stay" char="}" endRegion="Brace1" />
+				<Float attribute="Float" context="#stay">
+					<AnyChar String="fF" attribute="Float" context="#stay"/>
+				</Float>
+				<HlCOct attribute="Octal" context="#stay"/>
+				<HlCHex attribute="Hex" context="#stay"/>
+				<Int attribute="Decimal" context="#stay" >
+					<StringDetect attribute="Decimal" context="#stay" String="ULL" insensitive="TRUE"/>
+					<StringDetect attribute="Decimal" context="#stay" String="LUL" insensitive="TRUE"/>
+					<StringDetect attribute="Decimal" context="#stay" String="LLU" insensitive="TRUE"/>
+					<StringDetect attribute="Decimal" context="#stay" String="UL" insensitive="TRUE"/>
+					<StringDetect attribute="Decimal" context="#stay" String="LU" insensitive="TRUE"/>
+					<StringDetect attribute="Decimal" context="#stay" String="LL" insensitive="TRUE"/>
+					<StringDetect attribute="Decimal" context="#stay" String="U" insensitive="TRUE"/>
+					<StringDetect attribute="Decimal" context="#stay" String="L" insensitive="TRUE"/>
+				</Int>
+				<HlCChar attribute="Char" context="#stay"/>
+				<DetectChar attribute="String" context="String" char="&quot;"/>
+				<Detect2Chars attribute="Comment" context="SingleLineComment" char="/" char1="/"/>
+				<Detect2Chars attribute="Comment" context="MultiLineComment" char="/" char1="*"/>
+				<AnyChar attribute="Symbol" context="#stay" String=":!%&amp;()+,-/.*&lt;=&gt;?[]|~^&#59;"/>
+				<RegExpr attribute="Preprocessor" context="Preprocessor" String="^#"/>
+				<Detect2Chars attribute="String" context="String" char="@" char1="&quot;" />
+			</context>
+			<context attribute="String" lineEndContext="#pop" name="String">
+				<LineContinue attribute="String" context="#stay"/>
+				<HlCStringChar attribute="String Char" context="#stay"/>
+				<DetectChar attribute="String" context="#pop" char="&quot;"/>
+			</context>
+			<context attribute="Comment" lineEndContext="#pop" name="SingleLineComment"/>
+			<context attribute="Comment" lineEndContext="#stay" name="MultiLineComment">
+				<Detect2Chars attribute="Comment" context="#pop" char="*" char1="/"/>
+			</context>
+			<context attribute="Preprocessor" lineEndContext="Default" name="Preprocessor">
+				<LineContinue attribute="Preprocessor" context="#stay"/>
+				<RangeDetect attribute="Prep. Lib" context="#stay" char="&quot;" char1="&quot;"/>
+				<RangeDetect attribute="Prep. Lib" context="#stay" char="&lt;" char1="&gt;"/>
+				<IncludeRules context="##Doxygen" />
+				<Detect2Chars attribute="Comment" context="SingleLineComment" char="/" char1="/"/>
+				<Detect2Chars attribute="Comment" context="MultiLineCommentPrep" char="/" char1="*"/>
+			</context>
+			<context attribute="Comment" lineEndContext="#stay" name="MultiLineCommentPrep">
+				<Detect2Chars attribute="Comment" context="#pop#pop" char="*" char1="/"/>
+			</context>
+		</contexts>
+		<itemDatas>
+			<itemData name="Normal Text" defStyleNum="dsNormal"/>
+			<itemData name="Keyword"	defStyleNum="dsKeyword"/>
+			<itemData name="Data Type"	defStyleNum="dsDataType"/>
+			<itemData name="Decimal"	defStyleNum="dsDecVal"/>
+			<itemData name="Octal"	defStyleNum="dsBaseN"/>
+			<itemData name="Hex"	defStyleNum="dsBaseN"/>
+			<itemData name="Float"	defStyleNum="dsFloat"/>
+			<itemData name="Char"	defStyleNum="dsChar"/>
+			<itemData name="String"	defStyleNum="dsString"/>
+			<itemData name="String Char"	defStyleNum="dsChar"/>
+			<itemData name="Comment"	defStyleNum="dsComment"/>
+			<itemData name="Symbol"	defStyleNum="dsNormal"/>
+			<itemData name="Preprocessor"	defStyleNum="dsOthers"/>
+			<itemData name="Prep. Lib"	defStyleNum="dsOthers"/> <!--,Qt::darkYellow,Qt::yellow,false,false)); -->
+		</itemDatas>
+	</highlighting>
+	<general>
+		<comments>
+			<comment name="singleLine" start="//" />
+			<comment name="multiLine" start="/*" end="*/" />
+		</comments>
+		<keywords casesensitive="1" />
+	</general>
+</language>
