@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE QtCreatorSession>
-<!-- Written by QtCreator 3.5.1, 2015-10-23T12:17:22. -->
+<!-- Written by QtCreator 3.5.1, 2015-10-25T23:01:59. -->
 <qtcreator>
  <data>
   <variable>Color</variable>
@@ -8,7 +8,7 @@
  </data>
  <data>
   <variable>EditorSettings</variable>
-  <value type="QByteArray">AAAAD0VkaXRvck1hbmFnZXJWNAAAAAAAAAAAAAAACQAAAAVlbXB0eQ==</value>
+  <value type="QByteArray">AAAAD0VkaXRvck1hbmFnZXJWNAAAAAEAAAD8AC8AaABvAG0AZQAvAHcAbwBuAG8AdwBhAGsALwBjADEALwBCAFQAUwBfAEIATQAvAGIAbQAvAHMAeQBuAGMAaAByAG8AbgBpAHoAYQB0AGkAbwBuAC8AdABlAHMAdABpAG4AZwAvAHUAbgBpAHQALwBjAGwAbwBjAGsALwBoAGEAbgBkAGwAZQByAHMALwBzAG8AdQByAGMAZQBzAC8AcwBvAHUAcgBjAGUAcwBfAG0AbwBuAGkAdABvAHIAaQBuAGcALwB1AHQAXwBoAHcAYQBwAGkAXwBzAG8AdQByAGMAZQBzAF8AbQBvAG4AaQB0AG8AcgAuAGMAcABwAAAADAAAAAAYAAAAAQAAAHgAAAAAAAAA7wAAADUAAAAAAAAAAQAAAPwALwBoAG8AbQBlAC8AdwBvAG4AbwB3AGEAawAvAGMAMQAvAEIAVABTAF8AQgBNAC8AYgBtAC8AcwB5AG4AYwBoAHIAbwBuAGkAegBhAHQAaQBvAG4ALwB0AGUAcwB0AGkAbgBnAC8AdQBuAGkAdAAvAGMAbABvAGMAawAvAGgAYQBuAGQAbABlAHIAcwAvAHMAbwB1AHIAYwBlAHMALwBzAG8AdQByAGMAZQBzAF8AbQBvAG4AaQB0AG8AcgBpAG4AZwAvAHUAdABfAGgAdwBhAHAAaQBfAHMAbwB1AHIAYwBlAHMAXwBtAG8AbgBpAHQAbwByAC4AYwBwAHAAAAA4AHUAdABfAGgAdwBhAHAAaQBfAHMAbwB1AHIAYwBlAHMAXwBtAG8AbgBpAHQAbwByAC4AYwBwAHAAAAATQ3BwRWRpdG9yLkMrK0VkaXRvcgAAAVcAAAANY3VycmVudGVkaXRvcgAAAPwALwBoAG8AbQBlAC8AdwBvAG4AbwB3AGEAawAvAGMAMQAvAEIAVABTAF8AQgBNAC8AYgBtAC8AcwB5AG4AYwBoAHIAbwBuAGkAegBhAHQAaQBvAG4ALwB0AGUAcwB0AGkAbgBnAC8AdQBuAGkAdAAvAGMAbABvAGMAawAvAGgAYQBuAGQAbABlAHIAcwAvAHMAbwB1AHIAYwBlAHMALwBzAG8AdQByAGMAZQBzAF8AbQBvAG4AaQB0AG8AcgBpAG4AZwAvAHUAdABfAGgAdwBhAHAAaQBfAHMAbwB1AHIAYwBlAHMAXwBtAG8AbgBpAHQAbwByAC4AYwBwAHAAAAAmAEMAcABwAEUAZABpAHQAbwByAC4AQwArACsARQBkAGkAdABvAHIAAAAYAAAAAQAAAHgAAAAAAAAA7wAAADUAAAAA</value>
  </data>
  <data>
   <variable>ProjectDependencies</variable>
@@ -41,19 +41,6 @@
   <valuemap type="QVariantMap"/>
  </data>
  <data>
-  <variable>value-ProjectTree.ExpandData</variable>
-  <valuelist type="QVariantList">
-   <valuelist type="QVariantList">
-    <value type="QString">session</value>
-    <value type="QString">session</value>
-   </valuelist>
-   <valuelist type="QVariantList">
-    <value type="QString">/home/wonowak/c1/BTS_BM/BTS_BM.creator</value>
-    <value type="QString">BTS_BM</value>
-   </valuelist>
-  </valuelist>
- </data>
- <data>
   <variable>value-TaskWindow.Categories</variable>
   <valuelist type="QVariantList">
    <value type="QString">Task.Category.QmlAnalysis</value>
@@ -74,7 +61,6 @@
    <value type="QString">Breakpoints</value>
    <value type="QString">DefaultFormats</value>
    <value type="QString">IndividualFormats</value>
-   <value type="QString">ProjectTree.ExpandData</value>
    <value type="QString">TaskWindow.Categories</value>
    <value type="QString">TaskWindow.IncludeWarnings</value>
    <value type="QString">Watchers</value>
